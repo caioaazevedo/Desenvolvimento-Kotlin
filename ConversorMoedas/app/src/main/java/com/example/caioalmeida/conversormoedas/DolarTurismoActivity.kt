@@ -7,7 +7,6 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_dolar_turismo.*
-import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 
 class DolarTurismoActivity : Activity() {
@@ -32,15 +31,16 @@ class DolarTurismoActivity : Activity() {
                     var porcentVariacao = dolarTurismo.getDouble("pctChange")
                     var dataHora = dolarTurismo.getString("create_date")
 
-                    var texto: String = "Compra: R$" + compra.toString() + "\n" +
-                            "Venda: R$" + venda.toString() + "\n" +
-                            "Variação: R$" + variacao.toString() + "\n" +
+                    var texto: String = "Compra: R$ " + compra.toString() + "\n" +
+                            "Venda: R$ " + venda.toString() + "\n" +
+                            "Variação: R$ " + variacao.toString() + "\n" +
                             "Variação (Porcentagem): " + porcentVariacao.toString() + "%\n" +
                             "Data/Hora: " + dataHora
+
                     textRespostaTurismo.setText(texto)
 
                 }, Response.ErrorListener {
-                    textConversao.setText("Erro de Requisição!")
+                    textRespostaTurismo.setText("Erro de Requisição!")
                 })
             que.add(req)
         }

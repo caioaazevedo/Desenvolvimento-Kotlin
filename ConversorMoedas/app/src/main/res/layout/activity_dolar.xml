@@ -6,27 +6,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".EuroActivity">
+        tools:context=".DolarActivity">
 
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Euro"/>
+            android:text="Dolar Comercial"/>
 
     <Button
-            android:id="@+id/btnEuro"
+            android:id="@+id/btnDolar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Consultar"/>
 
     <TextView
-            android:id="@+id/textTituloEuro"
+            android:id="@+id/textTituloDolar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""/>
 
     <TextView
-            android:id="@+id/textRespostaEuro"
+            android:id="@+id/textRespostaDolar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

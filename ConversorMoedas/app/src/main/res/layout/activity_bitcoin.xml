@@ -13,4 +13,21 @@
             android:layout_height="wrap_content"
             android:text="Bitcoin"/>
 
+        <Button
+                android:id="@+id/btnBitcoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultar"/>
+
+        <TextView
+                android:id="@+id/textTituloBitcoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        <TextView
+                android:id="@+id/textRespostaBitcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
 </LinearLayout>

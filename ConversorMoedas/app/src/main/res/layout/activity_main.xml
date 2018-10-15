@@ -43,11 +43,4 @@
             android:layout_height="wrap_content"
             android:text="Bitcoin"/>
 
-
-    <TextView
-            android:id="@+id/textConversao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Resposta"/>
-
 </LinearLayout>

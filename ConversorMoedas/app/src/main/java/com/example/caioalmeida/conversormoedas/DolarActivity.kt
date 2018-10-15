@@ -6,25 +6,25 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import kotlinx.android.synthetic.main.activity_bitcoin.*
+import kotlinx.android.synthetic.main.activity_dolar.*
 import org.json.JSONObject
 
-class BitcoinActivity : Activity() {
+class DolarActivity : Activity() {
 
     var url = "https://economia.awesomeapi.com.br/all"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bitcoin)
+        setContentView(R.layout.activity_dolar)
 
-        btnBitcoin.setOnClickListener {
-            textTituloBitcoin.setText("Cotação do Bitcoin:")
+        btnDolar.setOnClickListener {
+            textTituloDolar.setText("Cotação do Dolar Comercial:")
 
-            val que = Volley.newRequestQueue(this@BitcoinActivity)
+            val que = Volley.newRequestQueue(this@DolarActivity)
             val req = JsonObjectRequest(Request.Method.GET, url, null,
                 Response.Listener { response ->
 
-                    val dolarTurismo: JSONObject = response.getJSONObject("BTC")
+                    val dolarTurismo: JSONObject = response.getJSONObject("USD")
                     var compra = dolarTurismo.getDouble("bid")
                     var venda = dolarTurismo.getDouble("ask")
                     var variacao = dolarTurismo.getDouble("varBid")
@@ -37,10 +37,10 @@ class BitcoinActivity : Activity() {
                             "Variação (Porcentagem): " + porcentVariacao.toString() + "%\n" +
                             "Data/Hora: " + dataHora
 
-                    textRespostaBitcoin.setText(texto)
+                    textRespostaDolar.setText(texto)
 
                 }, Response.ErrorListener {
-                    textRespostaBitcoin.setText("Erro de Requisição!")
+                    textRespostaDolar.setText("Erro de Requisição!")
                 })
             que.add(req)
         }

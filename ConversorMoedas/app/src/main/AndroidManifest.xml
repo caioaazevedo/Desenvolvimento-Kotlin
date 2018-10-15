@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".BitcoinActivity">
         </activity>
+        <activity android:name=".DolarActivity">
+        </activity>
     </application>
 
 </manifest>
