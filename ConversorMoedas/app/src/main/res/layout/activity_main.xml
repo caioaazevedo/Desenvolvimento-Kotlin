@@ -18,7 +18,31 @@
             android:id="@+id/buttonDolarComercial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dolar Comercial"/>
+            android:text="Dólar Comercial"/>
+    <Button
+            android:id="@+id/buttonDolarTurismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dólar Turismo"/>
+
+    <Button
+            android:id="@+id/buttonEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euro"/>
+
+    <Button
+            android:id="@+id/buttonLibra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Libra"/>
+
+    <Button
+            android:id="@+id/buttonBitcoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin"/>
+
 
     <TextView
             android:id="@+id/textConversao"

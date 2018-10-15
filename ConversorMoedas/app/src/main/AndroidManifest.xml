@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".DolarTurismoActivity">
+        </activity>
+        <activity android:name=".EuroActivity">
+        </activity>
+        <activity android:name=".LibraActivity">
+        </activity>
+        <activity android:name=".BitcoinActivity">
+        </activity>
     </application>
 
 </manifest>

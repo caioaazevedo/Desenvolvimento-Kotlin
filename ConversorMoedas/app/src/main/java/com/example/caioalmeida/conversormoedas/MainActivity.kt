@@ -1,6 +1,7 @@
 package com.example.caioalmeida.conversormoedas
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.android.volley.Request
@@ -35,6 +36,29 @@ class MainActivity : Activity() {
                 })
             que.add(req)
         }
+
+        buttonDolarTurismo.setOnClickListener {
+            val intent = Intent(this, DolarTurismoActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        buttonEuro.setOnClickListener{
+            val intent = Intent(this, EuroActivity::class.java)
+            startActivity(intent)
+        }
+
+        buttonLibra.setOnClickListener {
+            val intent = Intent(this, LibraActivity::class.java)
+            startActivity(intent)
+        }
+
+        buttonBitcoin.setOnClickListener {
+            val intent = Intent(this, BitcoinActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
 
     }
