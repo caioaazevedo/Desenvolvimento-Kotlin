@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoedasFacil</string>
+    
+    <string-array name="moedas">
+        <item>Dólar Comercial - USD</item>
+        <item>Dólar Turismo - USDT</item>
+        <item>Dólar Canadense - CAD</item>
+        <item>Euro - EUR</item>
+        <item>Libra - GBP</item>
+        <item>Peso Argentino - ARS</item>
+        <item>Bitcoin - BTC</item>
+    </string-array>
+</resources>
