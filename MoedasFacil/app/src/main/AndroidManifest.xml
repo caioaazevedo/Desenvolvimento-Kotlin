@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".ConversaoMoedasActivity">
         </activity>
+        <activity android:name=".InfoMoedasActivity">
+        </activity>
     </application>
 
 </manifest>

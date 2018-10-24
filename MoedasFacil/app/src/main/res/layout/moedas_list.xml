@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <ImageView
+            android:id="@+id/imageBandeira"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bandeira_eua"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome: DOLAR"
+            android:textSize="20sp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="5dp"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorLigthGreen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/imageBandeira"/>
+
+    <TextView
+            android:id="@+id/textCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codigo: USD"
+            android:textSize="20sp"
+            android:layout_marginLeft="170dp"
+            android:layout_below="@id/textNome"/>
+
+</RelativeLayout>
