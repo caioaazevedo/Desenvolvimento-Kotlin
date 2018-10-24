@@ -24,6 +24,10 @@
         </activity>
         <activity android:name=".Activities.MoedasActivity">
         </activity>
+        <activity android:name=".ConversaoRealActivity">
+        </activity>
+        <activity android:name=".ConversaoMoedasActivity">
+        </activity>
     </application>
 
 </manifest>

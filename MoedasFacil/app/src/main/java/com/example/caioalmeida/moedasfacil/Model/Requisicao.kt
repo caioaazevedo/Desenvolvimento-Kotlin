@@ -38,4 +38,21 @@ class Requisicao {
 
         return texto
     }
+
+    fun requisicaoMoeda(siglaMoeda: String, context: Context): Double{
+        var valorMoeda = 0.0
+        val que = Volley.newRequestQueue(context)
+        val req = JsonObjectRequest(Request.Method.GET, url, null,
+            Response.Listener { response ->
+                val moeda = response.getJSONObject(siglaMoeda)
+
+                valorMoeda = moeda.getDouble("bid")
+
+            }, Response.ErrorListener {
+                valorMoeda = -1.0
+            })
+        que.add(req)
+
+        return valorMoeda
+    }
 }
