@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:elevation="10dp">
+
+        <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@color/colorOrange"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"/>
+
+        <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="5dp"/>
+
+        <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
+
+        <ImageView
+                android:id="@+id/imageItem"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+                android:id="@+id/textNomeItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Item"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="110dp"/>
+
+        <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emprestado"
+                android:textSize="15sp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"/>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

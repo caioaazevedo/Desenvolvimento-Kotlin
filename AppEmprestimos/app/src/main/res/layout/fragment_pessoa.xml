@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey">
+    <TextView
+            android:id="@+id/textTituloPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_pessoa"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+    <View
+            android:layout_width="120dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/textTituloPessoas"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textTituloListPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pessoas Cadastradas"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/textTituloPessoas"/>
+
+    <View
+            android:layout_width="120dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/textTituloListPessoas"
+            android:background="@drawable/rouder_corner_dark"
+            android:layout_marginTop="3dp"
+            android:layout_alignLeft="@id/textTituloListPessoas"/>
+
+    <ListView
+            android:id="@+id/listPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textTituloListPessoas"
+            android:layout_marginTop="20dp"
+            android:layout_above="@id/btnAdicionarPessoas"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <Button
+            android:id="@+id/btnAdicionarPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Pessoa"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorCream"
+            android:padding="10dp"/>
+
+
+
+
+
+</RelativeLayout>

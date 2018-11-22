@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/textTituloAddPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Pessoa"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+    <View
+            android:layout_width="250dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/textTituloAddPessoa"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textCampoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Nome:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/textTituloAddPessoa"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoNome"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoNome"
+            android:layout_marginLeft="20dp"
+            android:hint="Nome"/>
+
+    <TextView
+            android:id="@+id/textCampoTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Telefone:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/textTituloAddPessoa"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"/>
+
+    <EditText
+            android:id="@+id/editCampoTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoTelefone"
+            android:hint="Telefone"
+            android:layout_alignLeft="@id/textCampoTelefone"
+            android:layout_marginRight="20dp"
+            android:inputType="phone"/>
+
+    <TextView
+            android:id="@+id/textCampoCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*CEP:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoNome"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoCep"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoCep"
+            android:hint="CEP"
+            android:layout_alignLeft="@id/textCampoCep"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+    <Button
+            android:id="@+id/buttonCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar por CEP"
+            android:textColor="@color/colorWhite"
+            android:layout_alignBaseline="@+id/editCampoCep"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rouder_corner_dark"
+            android:padding="10dp"/>
+
+    <TextView
+            android:id="@+id/textCampoRua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Rua:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoCep"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoRua"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoRua"
+            android:hint="Rua"
+            android:layout_alignLeft="@id/textCampoRua"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoComplemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complemento:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/buttonCep"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/editCampoTelefone"/>
+
+    <EditText
+            android:id="@+id/editCampoComplemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoComplemento"
+            android:hint="Complemento"
+            android:layout_alignLeft="@id/textCampoTelefone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoRua"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoBairro"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoBairro"
+            android:hint="Bairro"
+            android:layout_alignLeft="@id/textCampoBairro"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoLocalidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localidade:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoComplemento"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/editCampoTelefone"/>
+
+    <EditText
+            android:id="@+id/editCampoLocalidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoLocalidade"
+            android:hint="Localidade"
+            android:layout_alignLeft="@id/textCampoLocalidade"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoUf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UF:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoBairro"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoUf"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoUf"
+            android:hint="UF"
+            android:layout_alignLeft="@id/textCampoUf"
+            android:layout_marginRight="20dp"/>
+
+    <Button
+            android:id="@+id/buttonAddPessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/editCampoLocalidade"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rouder_corner_red"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"/>
+
+</RelativeLayout>

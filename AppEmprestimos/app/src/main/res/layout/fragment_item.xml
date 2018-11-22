@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey">
+    <TextView
+            android:id="@+id/textTituloItens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_item"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    <View
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/textTituloItens"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textTituloListItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Itens Cadastradas"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/textTituloItens"/>
+
+    <View
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/textTituloListItens"
+            android:background="@drawable/rouder_corner_dark"
+            android:layout_marginTop="3dp"
+            android:layout_alignLeft="@id/textTituloListItens"/>
+
+    <ListView
+            android:id="@+id/listItens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textTituloListItens"
+            android:layout_marginTop="20dp"
+            android:layout_above="@id/btnAdicionarItens"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <Button
+            android:id="@+id/btnAdicionarItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emprestar Novo Item"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"/>
+
+</RelativeLayout>

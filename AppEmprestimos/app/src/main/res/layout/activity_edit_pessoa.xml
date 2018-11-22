@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.EditPessoaActivity">
+
+    <TextView
+            android:id="@+id/textTituloEditPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Pessoa"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"/>
+
+    <View
+            android:layout_width="250dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/textTituloEditPessoa"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textCampoNomeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Nome:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/textTituloEditPessoa"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoNomeEdit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoNomeEdit"
+            android:layout_marginLeft="20dp"
+            android:hint="Nome"/>
+
+    <TextView
+            android:id="@+id/textCampoTelefoneEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Telefone:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/textTituloEditPessoa"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"/>
+
+    <EditText
+            android:id="@+id/editCampoTelefoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoTelefoneEdit"
+            android:hint="Telefone"
+            android:layout_alignLeft="@id/textCampoTelefoneEdit"
+            android:layout_marginRight="20dp"
+            android:inputType="phone"/>
+
+    <TextView
+            android:id="@+id/textCampoCepEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*CEP:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoNomeEdit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoCepEdit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoCepEdit"
+            android:hint="CEP"
+            android:layout_alignLeft="@id/textCampoCepEdit"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+    <Button
+            android:id="@+id/buttonCepEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar por CEP"
+            android:textColor="@color/colorWhite"
+            android:layout_alignBaseline="@+id/editCampoCepEdit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rouder_corner_dark"
+            android:padding="10dp"/>
+
+    <TextView
+            android:id="@+id/textCampoRuaEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Rua:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoCepEdit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoRuaEdit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoRuaEdit"
+            android:hint="Rua"
+            android:layout_alignLeft="@id/textCampoRuaEdit"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoComplementoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complemento:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/buttonCepEdit"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/editCampoTelefoneEdit"/>
+
+    <EditText
+            android:id="@+id/editCampoComplementoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoComplementoEdit"
+            android:hint="Complemento"
+            android:layout_alignLeft="@id/textCampoTelefoneEdit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoBairroEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoRuaEdit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoBairroEdit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoBairroEdit"
+            android:hint="Bairro"
+            android:layout_alignLeft="@id/textCampoBairroEdit"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoLocalidadeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localidade:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoComplementoEdit"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/editCampoTelefoneEdit"/>
+
+    <EditText
+            android:id="@+id/editCampoLocalidadeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoLocalidadeEdit"
+            android:hint="Localidade"
+            android:layout_alignLeft="@id/textCampoLocalidadeEdit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    <TextView
+            android:id="@+id/textCampoUfEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UF:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/editCampoBairroEdit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <EditText
+            android:id="@+id/editCampoUfEdit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCampoUfEdit"
+            android:hint="UF"
+            android:layout_alignLeft="@id/textCampoUfEdit"
+            android:layout_marginRight="20dp"/>
+
+    <Button
+            android:id="@+id/buttonEditPessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/editCampoLocalidadeEdit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rouder_corner_red"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"/>
+
+</RelativeLayout>
