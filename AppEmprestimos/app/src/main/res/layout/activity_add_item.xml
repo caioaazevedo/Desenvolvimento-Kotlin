@@ -46,17 +46,17 @@
             android:src="@drawable/images_default"
             android:layout_marginLeft="20dp"/>
 
-    <Button
-            android:id="@+id/btnImagem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imageView"
-            android:text="Alterar"
-            android:textColor="@color/colorWhite"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/rouder_corner_red"
-            android:padding="10dp"
-            android:layout_marginLeft="30dp"/>
+    <!--<Button-->
+            <!--android:id="@+id/btnImagem"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/imageView"-->
+            <!--android:text="Alterar"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@drawable/rouder_corner_red"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
 
     <TextView
             android:id="@+id/textTituloNome"
@@ -79,51 +79,51 @@
             android:layout_marginRight="20dp"/>
 
 
-    <TextView
-            android:id="@+id/textTituloInicioEmprestimo"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editNome"
-            android:text="*Inicio do Período de Emprestimo:"
-            android:textSize="20sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textTituloInicioEmprestimo"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/editNome"-->
+            <!--android:text="*Inicio do Período de Emprestimo:"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginRight="20dp"/>-->
 
-    <TextView
-            android:id="@+id/textInicioEmprestimo"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="21/12/2018"
-            android:textSize="20dp"
-            android:textColor="@color/colorDarkGrey"
-            android:layout_below="@+id/textTituloInicioEmprestimo"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textInicioEmprestimo"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="21/12/2018"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@color/colorDarkGrey"-->
+            <!--android:layout_below="@+id/textTituloInicioEmprestimo"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="10dp"/>-->
 
-    <TextView
-            android:id="@+id/textTituloTerminoEmprestimo"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnImagem"
-            android:text="*Termino do Período de Emprestimo:"
-            android:textSize="20sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textTituloTerminoEmprestimo"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/btnImagem"-->
+            <!--android:text="*Termino do Período de Emprestimo:"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="20dp"/>-->
 
-    <TextView
-            android:id="@+id/textTerminoEmprestimo"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="21/12/2018"
-            android:textSize="20dp"
-            android:textColor="@color/colorDarkGrey"
-            android:layout_below="@+id/textTituloTerminoEmprestimo"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textTerminoEmprestimo"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="21/12/2018"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@color/colorDarkGrey"-->
+            <!--android:layout_below="@+id/textTituloTerminoEmprestimo"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="10dp"/>-->
 
     <Button
             android:id="@+id/buttonAddItem"
@@ -131,8 +131,8 @@
             android:layout_height="wrap_content"
             android:text="Cadastrar"
             android:textColor="@color/colorWhite"
-            android:layout_below="@id/textTerminoEmprestimo"
-            android:layout_marginTop="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/rouder_corner_dark"
             android:padding="10dp"/>

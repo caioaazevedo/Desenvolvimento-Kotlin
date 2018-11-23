@@ -1,13 +1,19 @@
 package com.example.caioalmeida.appemprestimos.Model
 
-import android.graphics.Bitmap
+import android.net.Uri
 import java.io.Serializable
-import java.util.*
 
-class Item(
-    val nome: String,
-    val imagem: Int,
-    val dataEmprestimo: String,
-    val dataDevolucao: String,
-    val situacao: Boolean
-) : Serializable
+class Item : Serializable{
+    var id: Int = 0
+    var nome: String = ""
+    var imagem: String? = ""
+    var situacao: Int = 0
+
+    constructor()
+
+    constructor(nome: String, imagem: String?, situacao: Int){
+        this.nome = nome
+        this.imagem = imagem
+        this.situacao = situacao
+    }
+}

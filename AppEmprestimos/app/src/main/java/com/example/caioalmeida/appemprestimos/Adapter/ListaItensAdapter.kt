@@ -3,6 +3,7 @@ package com.example.caioalmeida.appemprestimos.Adapter
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +12,7 @@ import com.example.caioalmeida.appemprestimos.Model.Item
 import com.example.caioalmeida.appemprestimos.R
 import kotlinx.android.synthetic.main.list_itens.view.*
 
-class ListaItensAdapter(private val context: Context?, private val itens: List<Item>) : BaseAdapter() {
+class ListaItensAdapter(private val context: Context?, private val itens: MutableList<Item>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View = LayoutInflater.from(context).inflate(R.layout.list_itens, parent, false)
@@ -19,14 +20,14 @@ class ListaItensAdapter(private val context: Context?, private val itens: List<I
         var item = itens[position]
 
         view.textNomeItem.text = item.nome
-        if(item.situacao){
-            view.textStatus.text = "Emprestado"
+        if(item.situacao == 1){
+            view.textStatus.text = "Disponiveĺ"
             view.textStatus.setTextColor(Color.parseColor("#167916"))
         } else {
-            view.textStatus.text = "Expirado"
+            view.textStatus.text = "Emprestado"
             view.textStatus.setTextColor(Color.parseColor("#b51d17"))
         }
-        view.imageItem.setImageResource(item.imagem)
+        view.imageItem.setImageURI(Uri.parse(item.imagem))
 
         return view
     }

@@ -74,65 +74,65 @@
             android:textColor="@color/colorDarkGrey"/>
 
 
-    <TextView
-            android:id="@+id/textCampoDataIniInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Início do Período de Emprestimo:"
-            android:textSize="25sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_below="@+id/textMostraNomeItem"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="30dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textCampoDataIniInfo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Início do Período de Emprestimo:"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:layout_below="@+id/textMostraNomeItem"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
 
-    <View
-            android:layout_width="220dp"
-            android:layout_height="3dp"
-            android:layout_below="@+id/textCampoDataIniInfo"
-            android:background="@color/colorOrange"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="30dp"/>
+    <!--<View-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:layout_below="@+id/textCampoDataIniInfo"-->
+            <!--android:background="@color/colorOrange"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
 
-    <TextView
-            android:id="@+id/textMostraDataIniInfo"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textCampoDataIniInfo"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-            android:text="18/10/2018"
-            android:textSize="20sp"
-            android:textColor="@color/colorDarkGrey"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textMostraDataIniInfo"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textCampoDataIniInfo"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="18/10/2018"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/colorDarkGrey"/>-->
 
-    <TextView
-            android:id="@+id/textCampoDataTerInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Término do Período de Emprestimo:"
-            android:textSize="25sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_below="@+id/textMostraDataIniInfo"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="30dp"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textCampoDataTerInfo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Término do Período de Emprestimo:"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:layout_below="@+id/textMostraDataIniInfo"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
 
-    <View
-            android:layout_width="260dp"
-            android:layout_height="3dp"
-            android:layout_below="@+id/textCampoDataTerInfo"
-            android:background="@color/colorPrimaryDark"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="30dp"/>
+    <!--<View-->
+            <!--android:layout_width="260dp"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:layout_below="@+id/textCampoDataTerInfo"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
 
-    <TextView
-            android:id="@+id/textMostraDataTerInfo"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textCampoDataTerInfo"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-            android:text="17/11/2018"
-            android:textSize="20sp"
-            android:textColor="@color/colorDarkGrey"/>
+    <!--<TextView-->
+            <!--android:id="@+id/textMostraDataTerInfo"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textCampoDataTerInfo"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="17/11/2018"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/colorDarkGrey"/>-->
 
     <Button
             android:id="@+id/buttonPessoaEditar"

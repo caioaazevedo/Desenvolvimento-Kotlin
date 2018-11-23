@@ -12,6 +12,7 @@ import com.example.caioalmeida.appemprestimos.Activity.AddPessoaActivity
 import com.example.caioalmeida.appemprestimos.Activity.ItemInfoActivity
 import com.example.caioalmeida.appemprestimos.Adapter.ListaItensAdapter
 import com.example.caioalmeida.appemprestimos.Adapter.ListaPessoasAdapter
+import com.example.caioalmeida.appemprestimos.DataBaseHandler
 import com.example.caioalmeida.appemprestimos.Model.Item
 import com.example.caioalmeida.appemprestimos.R
 import kotlinx.android.synthetic.main.activity_add_item.*
@@ -36,21 +37,24 @@ class ItemFragment : Fragment() {
         var data = dia.toString() + "/" + mes.toString() + "/" + ano.toString()
 
 
-        val lista_itens = listOf(
-            Item(
-                nome = "Óculos",
-                imagem = R.drawable.oculos,
-                dataEmprestimo = data,
-                dataDevolucao = data,
-                situacao = true
-            ), Item(
-                nome = "Boné",
-                imagem = R.drawable.bone,
-                dataEmprestimo = data,
-                dataDevolucao = data,
-                situacao = false
-            )
-        )
+//        val lista_itens = listOf(
+//            Item(
+//                nome = "Óculos",
+//                imagem = R.drawable.oculos,
+//                dataEmprestimo = data,
+//                dataDevolucao = data,
+//                situacao = true
+//            ), Item(
+//                nome = "Boné",
+//                imagem = R.drawable.bone,
+//                dataEmprestimo = data,
+//                dataDevolucao = data,
+//                situacao = false
+//            )
+//        )
+
+        var db = DataBaseHandler(context!!)
+        var lista_itens = db.getAllItem()
 
         val adapter = ListaItensAdapter(context, lista_itens)
         listItens.adapter = adapter
