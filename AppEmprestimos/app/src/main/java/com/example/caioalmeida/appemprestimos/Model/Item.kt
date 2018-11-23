@@ -1,6 +1,5 @@
 package com.example.caioalmeida.appemprestimos.Model
 
-import android.net.Uri
 import java.io.Serializable
 
 class Item : Serializable{
@@ -11,7 +10,7 @@ class Item : Serializable{
 
     constructor()
 
-    constructor(nome: String, imagem: String?, situacao: Int){
+    constructor(nome: String, imagem:String?, situacao: Int){
         this.nome = nome
         this.imagem = imagem
         this.situacao = situacao

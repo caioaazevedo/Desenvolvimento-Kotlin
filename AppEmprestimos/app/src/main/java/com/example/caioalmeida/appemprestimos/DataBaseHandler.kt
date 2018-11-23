@@ -53,6 +53,8 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
         } else {
             Toast.makeText(context, pessoa.nome + " foi cadastrado(a)!", Toast.LENGTH_LONG).show()
         }
+
+        db.close()
     }
 
     fun insertItem(item: Item){
@@ -61,17 +63,22 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
         cv.put(COL_NAME_ITEM, item.nome)
         cv.put(COL_IMAGEM, item.imagem)
         cv.put(COL_STATUS_ITEM, item.situacao)
-        val result = db.insert(TABLE_NAME_ITEM, COL_IMAGEM, cv)
+        val result = db.insert(TABLE_NAME_ITEM, null, cv)
         if (result == -1.toLong()){
             Toast.makeText(context, "Erro ao Cadastrar!", Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(context, item.nome + " foi cadastrado(a)!", Toast.LENGTH_LONG).show()
         }
 
-        db.execSQL("INSERT INTO " + TABLE_NAME_ITEM + " (" + COL_NAME_ITEM+ ", " + COL_IMAGEM + ", " +
-                COL_STATUS_ITEM + ") VALUES (" + item.nome + ", " + item.imagem + ", " + item.situacao + ");")
-
         db.close()
+
+//        db.execSQL("INSERT INTO " + TABLE_NAME_ITEM + " (" + COL_NAME_ITEM+ ", " + COL_IMAGEM + ", " +
+//                COL_STATUS_ITEM + ") VALUES (" + item.nome + ", " + item.imagem + ", " + item.situacao + ");")
+
+//        db.execSQL("INSERT INTO " + TABLE_NAME_ITEM + " (" + COL_NAME_ITEM+ ", " + COL_IMAGEM + ", " +
+//                COL_STATUS_ITEM + ") VALUES (" + item.nome + ", " + item.situacao + ");")
+//
+//        db.close()
     }
 
     fun getAllPessoa(): MutableList<Pessoa>{
@@ -115,7 +122,7 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
                 item.nome = result.getString((result.getColumnIndex((COL_NAME_ITEM))))
                 item.imagem = result.getString(result.getColumnIndex(COL_IMAGEM))
                 item.situacao = result.getString(result.getColumnIndex(COL_STATUS_ITEM)).toInt()
-
+                list.add(item)
             }while (result.moveToNext())
         }
 

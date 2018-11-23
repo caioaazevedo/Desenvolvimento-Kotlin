@@ -54,7 +54,7 @@ class AddItemActivity : AppCompatActivity() {
         buttonAddItem.setOnClickListener {
             nome = editNome.text.toString()
 
-            var item = Item(nome = nome, imagem = imagemItem, situacao = SITUACAO)
+            var item = Item(nome = nome, imagem = imagemItem,situacao = SITUACAO)
 
             var db = DataBaseHandler(this)
             db.insertItem(item)
