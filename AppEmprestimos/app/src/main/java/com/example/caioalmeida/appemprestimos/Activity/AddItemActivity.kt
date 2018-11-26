@@ -37,8 +37,6 @@ class AddItemActivity : AppCompatActivity() {
     var nome : String = ""
     var imagemItem : String? = null
     val SITUACAO = 1
-//    var dataInicio : Date? = null
-//    var dataTermino : Date? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,51 +60,7 @@ class AddItemActivity : AppCompatActivity() {
 
     }
 
-//    fun obtemDatas(){
-//        val dataAtual = Calendar.getInstance()
-//
-//        var dia = dataAtual.get(Calendar.DAY_OF_MONTH)
-//        var mes = dataAtual.get(Calendar.MONTH)
-//        var ano = dataAtual.get(Calendar.YEAR)
-//
-//        textInicioEmprestimo.setText(dia.toString() + "/" + mes.toString() + "/" + ano.toString())
-//
-//        dia += 1
-//
-//        textTerminoEmprestimo.setText(dia.toString() + "/" + mes.toString() + "/" + ano.toString())
-//
-//        textInicioEmprestimo.setOnClickListener {
-//            val datePicker = DatePickerDialog(this, DatePickerDialog.OnDateSetListener {
-//                    view, year, monthOfYear, dayOfMonth ->
-//
-//                val data = dayOfMonth.toString() + "/" + monthOfYear.toString() + "/" + year.toString()
-//                textInicioEmprestimo.text = data
-//                val formatoData = "dd/MM/yyyy"
-//                val formato = SimpleDateFormat(formatoData)
-//                dataInicio = formato.parse(data)
-//            }, ano, mes, dia)
-//            val calendar = Calendar.getInstance()
-//            datePicker.datePicker.minDate = calendar.timeInMillis
-//            datePicker.show()
-//
-//        }
-//
-//        textTerminoEmprestimo.setOnClickListener {
-//            val datePicker = DatePickerDialog(this, DatePickerDialog.OnDateSetListener {
-//                    view, year, monthOfYear, dayOfMonth ->
-//
-//                val data = dayOfMonth.toString() + "/" + monthOfYear.toString() + "/" + year.toString()
-//                textTerminoEmprestimo.text = data
-//                val formatoData = "dd/MM/yyyy"
-//                val formato = SimpleDateFormat(formatoData)
-//                dataInicio = formato.parse(data)
-//            }, ano, mes, dia)
-//            val calendar = Calendar.getInstance()
-//            calendar.add(Calendar.DAY_OF_MONTH,1)
-//            datePicker.datePicker.minDate = calendar.timeInMillis
-//            datePicker.show()
-//        }
-//    }
+
 
 
 

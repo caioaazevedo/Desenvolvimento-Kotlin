@@ -39,7 +39,7 @@
     <EditText
             android:id="@+id/editCampoNomeEdit"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoNomeEdit"
             android:layout_marginLeft="20dp"
             android:hint="Nome"/>
@@ -59,7 +59,7 @@
     <EditText
             android:id="@+id/editCampoTelefoneEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoTelefoneEdit"
             android:hint="Telefone"
             android:layout_alignLeft="@id/textCampoTelefoneEdit"
@@ -80,7 +80,7 @@
     <EditText
             android:id="@+id/editCampoCepEdit"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoCepEdit"
             android:hint="CEP"
             android:layout_alignLeft="@id/textCampoCepEdit"
@@ -113,7 +113,7 @@
     <EditText
             android:id="@+id/editCampoRuaEdit"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoRuaEdit"
             android:hint="Rua"
             android:layout_alignLeft="@id/textCampoRuaEdit"
@@ -134,7 +134,7 @@
     <EditText
             android:id="@+id/editCampoComplementoEdit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoComplementoEdit"
             android:hint="Complemento"
             android:layout_alignLeft="@id/textCampoTelefoneEdit"
@@ -155,7 +155,7 @@
     <EditText
             android:id="@+id/editCampoBairroEdit"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoBairroEdit"
             android:hint="Bairro"
             android:layout_alignLeft="@id/textCampoBairroEdit"
@@ -176,7 +176,7 @@
     <EditText
             android:id="@+id/editCampoLocalidadeEdit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoLocalidadeEdit"
             android:hint="Localidade"
             android:layout_alignLeft="@id/textCampoLocalidadeEdit"
@@ -197,7 +197,7 @@
     <EditText
             android:id="@+id/editCampoUfEdit"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/textCampoUfEdit"
             android:hint="UF"
             android:layout_alignLeft="@id/textCampoUfEdit"

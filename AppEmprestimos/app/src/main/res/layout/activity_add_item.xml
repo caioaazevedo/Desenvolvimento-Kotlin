@@ -30,53 +30,40 @@
             android:id="@+id/textTituloAddImagem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Imagem:"
+            android:text="Adicionar Imagem:"
             android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/textTituloAddItem"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"/>
+            android:layout_centerHorizontal="true"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_below="@id/textTituloAddImagem"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
             android:src="@drawable/images_default"
-            android:layout_marginLeft="20dp"/>
-
-    <!--<Button-->
-            <!--android:id="@+id/btnImagem"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/imageView"-->
-            <!--android:text="Alterar"-->
-            <!--android:textColor="@color/colorWhite"-->
-            <!--android:layout_marginTop="30dp"-->
-            <!--android:background="@drawable/rouder_corner_red"-->
-            <!--android:padding="10dp"-->
-            <!--android:layout_marginLeft="30dp"/>-->
+            android:layout_centerHorizontal="true"/>
 
     <TextView
             android:id="@+id/textTituloNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/textTituloAddImagem"
-            android:text="*Nome:"
+            android:text="Nome:"
             android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="150dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"/>
 
     <EditText
             android:id="@+id/editNome"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/textTituloNome"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
 
 
     <!--<TextView-->

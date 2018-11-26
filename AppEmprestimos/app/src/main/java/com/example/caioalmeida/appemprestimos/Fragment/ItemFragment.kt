@@ -37,22 +37,6 @@ class ItemFragment : Fragment() {
         var data = dia.toString() + "/" + mes.toString() + "/" + ano.toString()
 
 
-//        val lista_itens = listOf(
-//            Item(
-//                nome = "Óculos",
-//                imagem = R.drawable.oculos,
-//                dataEmprestimo = data,
-//                dataDevolucao = data,
-//                situacao = true
-//            ), Item(
-//                nome = "Boné",
-//                imagem = R.drawable.bone,
-//                dataEmprestimo = data,
-//                dataDevolucao = data,
-//                situacao = false
-//            )
-//        )
-
         var db = DataBaseHandler(context!!)
         var lista_itens = db.getAllItem()
 

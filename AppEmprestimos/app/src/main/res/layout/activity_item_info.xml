@@ -135,15 +135,28 @@
             <!--android:textColor="@color/colorDarkGrey"/>-->
 
     <Button
-            android:id="@+id/buttonPessoaEditar"
+            android:id="@+id/buttonItemEditar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Editar"
             android:textColor="@color/colorWhite"
-            android:layout_centerHorizontal="true"
             android:background="@drawable/rouder_corner_red"
             android:padding="10dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="70dp"/>
+
+    <Button
+            android:id="@+id/buttonItemDeletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deletar"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rouder_corner_red"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="70dp"/>
 
 </RelativeLayout>

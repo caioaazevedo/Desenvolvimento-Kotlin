@@ -14,10 +14,7 @@ class PessoaInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pessoa_info)
 
-        var pessoaTelefone = intent.extras.getLong("pessoa")
-
-        var db = DataBaseHandler(this)
-        val pessoa = db.getPessoaByTelefone(pessoaTelefone)
+        var pessoa = intent.extras.getSerializable("pessoa") as Pessoa
 
         textMostraNome.text = pessoa.nome
         textMostraTelefone.text = pessoa.telefone.toString()
@@ -25,7 +22,8 @@ class PessoaInfoActivity : AppCompatActivity() {
         textMostraEndereco.text = pessoa.endereco
 
         buttonPessoaDeletar.setOnClickListener {
-            db.deletePessoa(pessoaTelefone)
+            var db = DataBaseHandler(this)
+            db.deletePessoa(pessoa)
         }
 
         buttonPessoaEditar.setOnClickListener {

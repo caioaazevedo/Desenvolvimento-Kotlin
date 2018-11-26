@@ -23,33 +23,6 @@ class PessoaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-//        val lista_pessoas = listOf(
-//            Pessoa(
-//                nome = "Caio",
-//                cep = 71919000,
-//                telefone = 936565,
-//                endereco = "Rua 18, Alameda Norte, lote 12"
-//            ), Pessoa(
-//                nome = "Marlene",
-//                cep = 815698,
-//                telefone = 91436554,
-//                endereco = "Rua 35 Norte, Lote 05"
-//            ), Pessoa(
-//                nome = "Arnaldo",
-//                cep = 1818100,
-//                telefone = 7777777,
-//                endereco = "Rua dos Bobos, numero 7"
-//                )
-//
-//        )
-
-//        val pessoa = Entities.Pessoa(0, "Default", 0, "Default")
-//
-//        MyApplication.database?.pessoaDao()?.insertPessoa(pessoa)
-//
-//        var lista_pessoas = MyApplication.database?.pessoaDao()?.getAllPessoas()
-
         var db = DataBaseHandler(context!!)
         var lista_pessoas = db.getAllPessoa()
 
@@ -59,7 +32,7 @@ class PessoaFragment : Fragment() {
         listPessoas.setOnItemClickListener { parent, view, position, id ->
             val pessoa = lista_pessoas[position]
             var intent = Intent(context, PessoaInfoActivity::class.java)
-            intent.putExtra("pessoa", pessoa.telefone)
+            intent.putExtra("pessoa", pessoa)
             startActivity(intent)
         }
 

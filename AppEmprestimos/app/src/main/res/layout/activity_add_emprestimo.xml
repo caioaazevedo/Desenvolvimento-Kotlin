@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.AddEmprestimoActivity">
+
+    <TextView
+            android:id="@+id/textTituloAddEmprestimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar Emprestimo"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"/>
+
+    <View
+            android:layout_width="250dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/textTituloAddEmprestimo"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textTituloEmpPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTituloAddEmprestimo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Escolha uma Pessoa:"/>
+
+    <ListView
+            android:id="@+id/listPessoasEmprestimo"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textTituloEmpPessoa"
+            android:layout_marginTop="10dp">
+
+    </ListView>
+
+    <TextView
+            android:id="@+id/textTituloEmpItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listPessoasEmprestimo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Escolha uma Pessoa:"/>
+
+    <ListView
+            android:id="@+id/listItensEmprestimo"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textTituloEmpItem"
+            android:layout_marginTop="10dp">
+
+    </ListView>
+
+    <TextView
+            android:id="@+id/textTituloResumoEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listItensEmprestimo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Emprestimo Criado:"
+            android:textSize="20sp"/>
+    <TextView
+            android:id="@+id/textResumoEmpPessoa"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textTituloResumoEmp"
+            android:text="Pessoa"/>
+
+    <TextView
+            android:id="@+id/textResumoEmpItem"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textResumoEmpPessoa"
+            android:text="Item"/>
+
+    <Button
+            android:id="@+id/buttonProximoEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Próximo"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rouder_corner_red"/>
+
+</RelativeLayout>

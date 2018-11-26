@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.caioalmeida.appemprestimos.DataBaseHandler
 import com.example.caioalmeida.appemprestimos.Model.Item
 import com.example.caioalmeida.appemprestimos.R
 import kotlinx.android.synthetic.main.activity_item_info.*
@@ -26,6 +27,11 @@ class ItemInfoActivity : AppCompatActivity() {
                 textSituacao.text = "Emprestado"
                 textSituacao.setTextColor(Color.parseColor("#b51d17"))
             }
+        }
+
+        buttonItemDeletar.setOnClickListener {
+            var db = DataBaseHandler(this)
+            db.deleteItem(item!!)
         }
     }
 }

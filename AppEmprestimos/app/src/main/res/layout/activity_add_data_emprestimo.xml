@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.AddDataEmprestimoActivity">
+
+    <TextView
+            android:id="@+id/textTituloAddData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datas do Emprestimo"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"/>
+
+    <View
+            android:layout_width="250dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/textTituloAddData"
+            android:background="@drawable/rouder_corner_red"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/textDataEmpEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTituloAddData"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Escolha a Data de Emprestimo:"
+            android:textSize="20sp"/>
+
+    <EditText
+            android:id="@+id/editDataEmpEmp"
+            android:layout_width="150dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDataEmpEmp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    <TextView
+            android:id="@+id/textDataDevEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editDataEmpEmp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Escolha a Data de Devolução:"
+            android:textSize="20sp"/>
+
+    <EditText
+            android:id="@+id/editDataDevEmp"
+            android:layout_width="150dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDataDevEmp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    <Button
+            android:id="@+id/buttonCriarEmprestimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="Criar"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rouder_corner_red"/>
+
+
+</RelativeLayout>

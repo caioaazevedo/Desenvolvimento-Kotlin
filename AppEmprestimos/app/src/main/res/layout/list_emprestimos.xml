@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:elevation="10dp">
+
+        <View
+                android:id="@+id/viewSituacaoEmp"
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        <ImageView
+                android:id="@+id/imagePessoaIconEmp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_person_black_24dp"/>
+
+        <TextView
+                android:id="@+id/textNomePessoaEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da Pessoa"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="80dp"/>
+
+        <ImageView
+                android:id="@+id/imageItemEmp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ic_work_black_24dp"/>
+
+        <TextView
+                android:id="@+id/textNomeItemEmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Item"
+                android:textSize="25sp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="35dp"/>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
