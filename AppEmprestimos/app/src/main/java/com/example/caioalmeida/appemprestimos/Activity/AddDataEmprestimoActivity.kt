@@ -1,6 +1,11 @@
 package com.example.caioalmeida.appemprestimos.Activity
 
-import android.app.DatePickerDialog
+import android.app.*
+import android.content.Context
+import android.content.Intent
+import android.graphics.BitmapFactory
+import android.graphics.Color
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -28,9 +33,18 @@ class AddDataEmprestimoActivity : AppCompatActivity() {
     var mes = dataAtual.get(Calendar.MONTH)
     var ano = dataAtual.get(Calendar.YEAR)
 
+    lateinit var notificationManager: NotificationManager
+    lateinit var notificationChannel: NotificationChannel
+    lateinit var builder: Notification.Builder
+    private val chanelId = "com.example.caioalmeida.appemprestimos.Activity"
+    private val description = "Empréstimo Realizado"
+    private var id = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_data_emprestimo)
+
+        notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         var pessoa = intent.extras.getSerializable("pessoa") as Pessoa
         var item = intent.extras.getSerializable("item") as Item
@@ -58,6 +72,36 @@ class AddDataEmprestimoActivity : AppCompatActivity() {
             var db = DataBaseHandler(this)
             db.insertEmprestimo(emprestimo)
             db.updateSituacaoItem(emprestimo.idItem)
+
+            val intent = Intent(this, AddDataEmprestimoActivity::class.java)
+            val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                notificationChannel = NotificationChannel(chanelId, description, NotificationManager.IMPORTANCE_HIGH)
+                notificationChannel.enableLights(true)
+                notificationChannel.lightColor = Color.GREEN
+                notificationChannel.enableVibration(true)
+                notificationManager.createNotificationChannel(notificationChannel)
+
+                builder = Notification.Builder(this,  chanelId)
+                    .setContentTitle("Emprestimo")
+                    .setContentText("Emprestimo Realizado!")
+                    .setSmallIcon(R.drawable.ic_launcher_round)
+                    .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher))
+                    .setContentIntent(pendingIntent)
+            } else {
+                builder = Notification.Builder(this)
+                    .setContentTitle("Emprestimo")
+                    .setContentText("Emprestimo Realizado!")
+                    .setSmallIcon(R.drawable.ic_launcher_round)
+                    .setLargeIcon(BitmapFactory.decodeResource(this.resources, R.drawable.ic_launcher))
+                    .setContentIntent(pendingIntent)
+            }
+
+            notificationManager.notify(id, builder.build())
+
+            id++
         }
     }
 
